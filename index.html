@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROBLOX TRAILER WEB</title>
+  </head>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #trailer {
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+    .intro {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-family: fantasy;
+    }
+    #btn {
+      border: none;
+      padding: 12px;
+      color: black;
+      background-color: wheat;
+      font-size: 20px;
+      margin: 10px;
+      border-radius: 10%;
+      width: 200px;
+      cursor: pointer;
+    }
+    #btn:hover {
+      color: white;
+      background-color: darkred;
+      transition: all 0.2s ease-in-out;
+    }
+  </style>
+  <body>
+    <video autoplay muted id="trailer">
+      <source src="game_trailer.mp4" type="video/mp4" />
+    </video>
+    <div class="intro">
+      <center>
+        <img src="roblox-logo.png" width="150" height="150" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          velit fuga reiciendis veniam, quos nobis magni voluptatibus ducimus
+          debitis dolore soluta distinctio deserunt deleniti commodi laudantium
+          exercitationem natus ab totam labore ea eum voluptatum non!
+        </p>
+        <button id="btn">PAUSE</button>
+      </center>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
